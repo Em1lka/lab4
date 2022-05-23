@@ -93,8 +93,10 @@ class iMatrix:
     def calculateResult(self):
         return self.__sumMatrix(self.__matrixMultiplication(self.matrixA, self.matrixA), self.__multiplyNumberMatrix(-self.k, self.__transposeMatrix(self.matrixA)))
          
-try:   
-    matrix = iMatrix(3, 4)
+try:
+    N = int(input('Введите N: '))
+    K = int(input('Введите K: '))    
+    matrix = iMatrix(K, N)
     print('==========A==========')
     print(matrix.matrixA)
     print('==========F==========')
